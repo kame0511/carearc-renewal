@@ -495,6 +495,24 @@
       opacity: 0;
       transition: opacity 0.4s;
     }
+    .service-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 0.5s var(--transition);
+      z-index: 0;
+    }
+    .service-card:nth-child(1)::after { background-image: url('https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=80'); }
+    .service-card:nth-child(2)::after { background-image: url('https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&q=80'); }
+    .service-card:nth-child(3)::after { background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80'); }
+    .service-card:nth-child(4)::after { background-image: url('https://images.unsplash.com/photo-1497215842964-222b430dc094?w=600&q=80'); }
+    .service-card:hover::after {
+      opacity: 0.08;
+    }
+    .service-card > * { position: relative; z-index: 1; }
     .service-card:hover {
       transform: translateY(-8px);
       border-color: rgba(233, 69, 96, 0.2);
@@ -1494,22 +1512,22 @@
       <div class="section-label" style="justify-content:center;"><span class="en">Clients</span></div>
     </div>
     <div class="clients-track">
-      <span class="client-logo en">CLIENT A</span>
-      <span class="client-logo en">CLIENT B</span>
-      <span class="client-logo en">CLIENT C</span>
-      <span class="client-logo en">CLIENT D</span>
-      <span class="client-logo en">CLIENT E</span>
-      <span class="client-logo en">CLIENT F</span>
-      <span class="client-logo en">CLIENT G</span>
-      <span class="client-logo en">CLIENT H</span>
-      <span class="client-logo en">CLIENT A</span>
-      <span class="client-logo en">CLIENT B</span>
-      <span class="client-logo en">CLIENT C</span>
-      <span class="client-logo en">CLIENT D</span>
-      <span class="client-logo en">CLIENT E</span>
-      <span class="client-logo en">CLIENT F</span>
-      <span class="client-logo en">CLIENT G</span>
-      <span class="client-logo en">CLIENT H</span>
+      <span class="client-logo en">BLOOM BEAUTY</span>
+      <span class="client-logo en">NEXUS CORP</span>
+      <span class="client-logo en">ARCHI WORKS</span>
+      <span class="client-logo en">VERDE DINING</span>
+      <span class="client-logo en">SHIFT DIGITAL</span>
+      <span class="client-logo en">LUMINA STYLE</span>
+      <span class="client-logo en">CRAFT STUDIO</span>
+      <span class="client-logo en">PRISM MEDIA</span>
+      <span class="client-logo en">BLOOM BEAUTY</span>
+      <span class="client-logo en">NEXUS CORP</span>
+      <span class="client-logo en">ARCHI WORKS</span>
+      <span class="client-logo en">VERDE DINING</span>
+      <span class="client-logo en">SHIFT DIGITAL</span>
+      <span class="client-logo en">LUMINA STYLE</span>
+      <span class="client-logo en">CRAFT STUDIO</span>
+      <span class="client-logo en">PRISM MEDIA</span>
     </div>
   </section>
 
